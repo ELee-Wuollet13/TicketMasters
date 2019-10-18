@@ -11,3 +11,6 @@
 #thegame {
   text-align: center;
 }
+.list-group-item {
+  float: left;
+}
