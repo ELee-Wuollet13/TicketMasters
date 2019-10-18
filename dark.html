@@ -196,12 +196,14 @@
           <div class="card bg-secondary">
             <div class="card-header bg-info">
             </div>
-            <div class="card-body bg-secondary">
+            <div class="card-body bg-secondary" id="thegame">
               <button onclick="changeClass(3)" type="button" class="btn btn-primary" id="buttonC">Button</button>
-              <button onclick="changeClass(2)" type="button" class="btn btn-warning" id="buttonB">Button</button>
+              <button onclick="changeClass(2)" type="button" class="btn btn-danger" id="buttonB">Button</button>
               <button onclick="changeClass(1)" type="button" class="btn btn-success" id="buttonA">Button</button>
-              <button onclick="iWon" type="button" class="btn btn-success" id="buttonA">Claim Victory!</button>
-              <h2 class="card-text">Test!</h2>
+              <button onclick="iWon()" type="button" class="btn btn-info" id="buttonA">Claim Victory!</button>
+              <h2 class="card-text">Button Game!</h2>
+              <p class="card-text">This is a game I made for you to enjoy! Push the colored buttons in the right order! When they're all greyed out, push Claim Victory to receive your prize!</p>
+              <img src="media/troph.jpg" alt="A gold trophy" class="d-none" id="trophy">
             </div> <!-- class = card-body -->
           </div> <!-- class = card -->
         </div> <!-- class = col-md-12, id = game -->
@@ -226,15 +228,15 @@
       var c = 0;
       function changeClass(num) {
         if(num==1 && c==1){
-          document.getElementById("buttonA").className = "btn btn-success disabled";
+          document.getElementById("buttonA").className = "btn btn-dark disabled";
           a=1;
         }
         else if (num==2 && c==1 && a==1){
-          document.getElementById("buttonB").className = "btn btn-warning disabled";
+          document.getElementById("buttonB").className = "btn btn-dark disabled";
           b=1;
         }
         else if (num==3){
-          document.getElementById("buttonC").className = "btn btn-primary disabled";
+          document.getElementById("buttonC").className = "btn btn-dark disabled";
           c = 1;
         }
         else {
@@ -242,13 +244,21 @@
           b = 0;
           c = 0;
           document.getElementById("buttonA").className = "btn btn-success";
-          document.getElementById("buttonB").className = "btn btn-warning";
+          document.getElementById("buttonB").className = "btn btn-danger";
           document.getElementById("buttonC").className = "btn btn-primary";
-          console.log("else ran!" + a + b + c);
+          alert("You lost! Try to push the buttons in the correct order");
         }
       }
       function iWon() {
-
+        if (a==1 && b==1 && c==1) {
+          alert("You won! Congratulations! You wasted your time pushing buttons! Have a prize for your efforts!");
+          document.getElementById("trophy").className = "d-inline-block";
+          document.getElementById("youwon").className = "yes";
+        }
+        else {
+          alert("You lose! Try to get all three buttons disabled.")
+          changeClass(4); // calls the button press with an invalid number, immediately resetting the buttons through the else statement
+        }
       }
     </script>
   </body>
