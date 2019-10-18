@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <title>Portfolio - Lillian Theuma</title>
   </head>
-  <body>
+  <body class="bg-dark text-light">
     <div class="container">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-info text-dark">
         <img src="media/happy.gif" alt="Thumbs up gif">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -18,24 +18,24 @@
             <a class="nav-link" href="#">Go to Epicodus</a>
           </li> <!-- class = nav-item -->
           <li class="nav-item">
-            <a class="nav-link" href="dark.html">Toggle Dark Mode</a>
+            <a class="nav-link" href="index.html">Toggle Dark Mode</a>
           </li> <!-- class = nav-item -->
         </ul> <!-- class = navbar-nav -->
       </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
-      <div id="header" class="jumbotron">
+      <div id="header" class="jumbotron bg-secondary text-dark">
         <h2>Lillian Theuma</h2>
         <h4>Portfolio</h4>
       </div> <!-- id = header - class = jumbotron -->
       <div id="body">
         <div class="row">
           <div class="col-md-6">
-            <div id="projects" class="card" >
-              <div class="card-header">
+            <div id="projects" class="card bg-secondary" >
+              <div class="card-header bg-info text-dark">
                 <h3>Projects I've been involved in</h3>
               </div> <!-- class = card-header -->
-              <div class="card-body">
+              <div class="card-body bg-secondary">
                 <ul id="projectlist" class="list-group list-group-flush">
-                  <li class="list-group-item">
+                  <li class="list-group-item bg-secondary">
                     A broken but funny fake wikipedia
                     <p> A broken attempt to recreate the <span id="wikipedia">English wikipedia</span> main page. Used many elements from <em>wikipedia</em>, including inspiration for directory structure. Could not get panels to work. Discontinued support at end of day.
                     <p class="font-italic"> Languages Involved </p>
@@ -43,9 +43,9 @@
                       <li>HTML</li>
                       <li>CSS</li>
                     </ul>
-                    <a class="nav-link" href="https://github.com/lillianTheuma/wikiforgedia">Github Repository</a>
-                  </li> <!-- class = list-group-item -->
-                  <li class="list-group-item">
+                    <a class="nav-link text-warning" href="https://github.com/lillianTheuma/wikiforgedia">Github Repository</a>
+                  </li> <!-- class = list-group-item bg-secondary -->
+                  <li class="list-group-item bg-secondary">
                     A band's website
                     <p> A static website with info about a made-up band. Practiced making navbars by hand, then attempted manual responsiveness.
                     <p class="font-italic"> Languages Involved </p>
@@ -53,9 +53,9 @@
                       <li>HTML</li>
                       <li>CSS</li>
                     </ul>
-                    <a class="nav-link" href="https://github.com/lillianTheuma/Band">Github Repository</a>
-                  </li> <!-- class = list-group-item-->
-                  <li class="list-group-item">
+                    <a class="nav-link text-warning" href="https://github.com/lillianTheuma/Band">Github Repository</a>
+                  </li> <!-- class = list-group-item bg-secondary-->
+                  <li class="list-group-item bg-secondary">
                     Travel Site
                     <p> A static travel site with many pages. Intended as a joke project as you will see from the theme, but put a good amount of work into it in the end. </p>
                     <p class="font-italic"> Languages Involved </p>
@@ -63,27 +63,24 @@
                       <li>HTML</li>
                       <li>CSS</li>
                     </ul>
-                    <a class="nav-link" href="https://github.com/lillianTheuma/LastResort">Github Repository</a>
-                  </li> <!-- class = list-group-item -->
+                    <a class="nav-link text-warning" href="https://github.com/lillianTheuma/LastResort">Github Repository</a>
+                  </li> <!-- class = list-group-item  bg-secondary -->
                 </ul> <!-- id = projectlist class = card-text -->
               </div> <!-- class = card-body -->
-              <div class="class-footer">
+              <div class="card-footer bg-info text-dark">
               </div>
             </div> <!-- id = projects class = card -->
           </div> <!-- class = col-md-6 -->
           <div class="col-md-6"
-            <div id="about" class="card"> <!-- Fix card! Border not showing. -->
+            <div id="about" class="card bg-secondary"> <!-- Fix card! Border not showing. -->
               <img src="media/logo_swarm.png" alt="thumbs up animation" class="card-img-top">
-              <div class="card-header" >
+              <div class="card-header bg-info text-dark" >
                 <h3>About me!</h3>
               </div> <!-- class = card-header -->
-              <div class="card-body">
-                <p class="card-text">
-                  I've been a sciencey person my whole life. I always love to learn something new about the world, and how it works. I started teaching myself various programming languages when I was young, but never stuck to any. I enjoyed working with computer hardware, and network systems, but could not wrap my head around software. I like <strong>anime</strong>, and all kinds of japanese media. I was born in California, but have lived in Portland for combined over 15 years.
+              <div class="card-body bg-secondary">
+                <p>
+                  I am a human that lives on a very large sphere. Sometimes, I stand on smaller spheres. But mostly I do not. I consume organic molecules for fuel. Not all of them though, there are many I do <strong> NOT </strong> consume.
                 </p> <!-- class = card-text -->
-                <p class="card-text">
-                  My motto about
-                </p>
               </div> <!-- class = card-body -->
             </div> <!-- id = about , class = card -->
           </div> <!-- class = col-md-6 -->
@@ -91,14 +88,14 @@
         <br>
         <div class="row">
           <div class="col-md-12">
-            <div id="background" class="card">
+            <div id="background" class="card bg-secondary">
 
-              <h2 class="card-header">My Background</h2>
-              <div class="card-body">
-                <h3 class="card-text"> Why am I taking this course at Epicodus? </h3>
-                <p class="card-text"> I've always enjoyed programming. I self taught myself bits and pieces over most of my life. But I found, in every language, I would hit a wall. This wall would come after about two weeks. I never found a way past it. When I looked for jobs, I realized quickly that I had to get past the wall if I wanted to continue in this field. I asked around and found Epicodus is exactly what I needed. I believe, without a doubt, that the pair programming environment, and weekly code reviews, will allow me to break past the wall and become the best programmer in any language I can possibly be. And also hopefully I'll get hired at the end, but that's for future me to find out. </p>
+              <h2 class="card-header bg-info text-dark">My Background</h2>
+              <div class="card-body bg-secondary">
+                <h3 class="card-text bg-secondary"> Why am I taking this course at Epicodus? </h3>
+                <p class="card-text bg-secondary"> I've always enjoyed programming. I self taught myself bits and pieces over most of my life. But I found, in every language, I would hit a wall. This wall would come after about two weeks. I never found a way past it. When I looked for jobs, I realized quickly that I had to get past the wall if I wanted to continue in this field. I asked around and found Epicodus is exactly what I needed. I believe, without a doubt, that the pair programming environment, and weekly code reviews, will allow me to break past the wall and become the best programmer in any language I can possibly be. And also hopefully I'll get hired at the end, but that's for future me to find out. </p>
               </div> <!-- class = card-body -->
-              <div class="card-footer">
+              <div class="card-footer bg-info text-dark">
               </div>
             </div> <!-- id= background , class = card -->
           </div> <!-- Row contains Background section -->
@@ -106,92 +103,92 @@
         <br>
         <div id="HISTitle" class="row">
           <div class="col-md-12">
-            <div class="card">
-              <h2 class="card-header">Hobbies, Interests, and Skills</h2>
-            </div> <!-- class = card -->
+            <div class="card bg-secondary">
+              <h2 class="card-header bg-info text-dark">Hobbies, Interests, and Skills</h2>
+            </div> <!-- class = card bg-secondary -->
           </div> <!-- class = col-md-12 -->
         </div> <!-- id = hobbiesTitle class = row -->
         <br>
         <div class="card-group" id="HISGroup">
           <div id="HIS" class="row">
             <div id="hobbies" class="col-md-4">
-              <div class="card">
-                <h2 class="card-header">Hobbies</h2>
-                <div class="card-body">
-                  <p class="card-text">
+              <div class="card bg-secondary">
+                <h2 class="card-header bg-info text-dark">Hobbies</h2>
+                <div class="card-body bg-secondary">
+                  <p class="card-text bg-secondary">
                     I have multiple hobbies! I enjoy things outside of this list, but these are my favorites of them all.
                   </p> <!-- class = card-text -->
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       PC Games, especially MMOs
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       Watching Anime
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       Taking part in online communities
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       Assembling and painting miniatures for tabletop games like Warhammer 40,000
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       Listening to music, usually in Japanese
                     </li> <!-- class = list-group item -->
                   </ul> <!-- class = list-group list-group-flush -->
                 </div> <!-- class = card-body -->
-                <div class="card-footer">
+                <div class="card-footer bg-info text-dark">
                 </div>
               </div> <!-- class = card -->
             </div> <!-- id = hobbies, class = col-md-4 -->
             <div id="interests" class="col-md-4">
-              <div class="card">
-                <h2 class="card-header">Interests</h2>
-                <div class="card-body">
-                  <p class="card-text">
+              <div class="card bg-secondary">
+                <h2 class="card-header bg-info text-dark">Interests</h2>
+                <div class="card-body bg-secondary">
+                  <p class="card-text bg-secondary">
                     I have many interests. A condensed list of my 5 favorite subjects includes..
                   </p>
                   <ol class="list-group list-group-flush">
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       1. Astronomy
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       2. Computer Science
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       3. Engineering
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       4. Game Development
                     </li> <!-- class = list-group item -->
-                    <li class="list-group-item">
+                    <li class="list-group-item bg-secondary">
                       5. Chemistry, Physics, hard sciences in general
                     </li> <!-- class = list-group item -->
                   </ol> <!-- class = list-group list-group-flush -->
                 </div> <!-- class = card-body -->
-                <div class="card-footer">
+                <div class="card-footer bg-info text-dark">
                 </div>
               </div> <!-- class = card -->
             </div> <!-- id = interests, class = col-md-4 -->
             <div id="skills" class="col-md-4">
-              <div class="card">
-                <h2 class="card-header">Skills</h2>
-                <div class="card-body">
-                  <p class="card-text">
+              <div class="card bg-secondary">
+                <h2 class="card-header bg-info text-dark">Skills</h2>
+                <div class="card-body bg-secondary">
+                  <p class="card-text bg-secondary">
                     Ordered list for no reason (CHANGE THIS TEXT OH GODS PLEASE CHANGE THIS BEFORE SUBMITTING)
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> One item! </li>
-                    <li class="list-group-item"> Two item! </li>
-                    <li class="list-group-item"> Three item! So many! </li>
+                    <li class="list-group-item bg-secondary"> One item! </li>
+                    <li class="list-group-item bg-secondary"> Two item! </li>
+                    <li class="list-group-item bg-secondary"> Three item! So many! </li>
                   </ul> <!-- class=  list-group list-group-flush -->
                 </div> <!-- class = card-body -->
-                <div class="card-footer">
+                <div class="card-footer bg-info text-dark">
                 </div>
               </div> <!-- class = card -->
             </div> <!-- id = skills, class = col-md-4 -->
           </div> <!-- id = HIS class = row -->
         </div> <!-- class = card-group -->
       </div> <!-- id = body -->
-      <nav id="navbar" class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+      <nav id="navbar" class="navbar fixed-bottom navbar-expand-lg navbar-light bg-info text-dark">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/lillianTheuma/Portfolio">Github Repository</a>
