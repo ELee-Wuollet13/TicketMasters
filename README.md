@@ -23,9 +23,9 @@ git clone https://github.com/lillianTheuma/Portfolio
 * Extract contents of .zip folder into directory of your choice
 
 # Usage
-If using on a local machine, open (~./Portfolio/index.html)
+If using on a local machine, open (./Portfolio/index.html)
 OR
-If using on an FTP, direct users to (~./Portfolio/index.html)
+If using on an FTP, direct users to (./Portfolio/index.html)
 
 # Credits
 * Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
