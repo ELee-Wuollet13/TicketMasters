@@ -31,7 +31,7 @@ If using on an FTP, direct users to (./Portfolio/index.html)
 * Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
 * Many elements herein were possible thanks to the extensive documetation and information for the Bootstrap project.
 
-#Licence
+#License
 * This repository is offered under the MIT license
 @ Lillian Theuma 2019
 See LICENSE file for additional details regarding license.
