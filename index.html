@@ -197,7 +197,7 @@
                 <button onclick="changeClass(3)" type="button" class="btn btn-primary" id="buttonC">Button</button>
                 <button onclick="changeClass(2)" type="button" class="btn btn-warning" id="buttonB">Button</button>
                 <button onclick="changeClass(1)" type="button" class="btn btn-success" id="buttonA">Button</button>
-                <button onclick="iWon" type="button" class="btn btn-success" id="buttonA">Claim Victory!</button>
+                <button onclick="iWon()" type="button" class="btn btn-info" id="buttonD">Claim Victory!</button>
                 <h2>Test!</h2>
               </div> <!-- class = card-body -->
             </div> <!-- class = card -->
@@ -246,7 +246,12 @@
         }
       }
       function iWon() {
-        
+        if (a==1 && b==1 && c==1) {
+          alert("You won! Congratulations! You wasted your time pushing buttons!");
+        }
+        else {
+          alert("You lose! Try to get all three buttons disabled. Hint: It's easier in dark mode.")
+        }
       }
     </script>
   </body>
