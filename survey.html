@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+    <title>Programming Language Suggester</title>
+    <link rel="shortcut icon" tupe="image/x-icon" href="media/happy.gif">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html"><img src="media/happy.gif" alt="Thumbs up gif"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lillianTheuma">See my work on Github</a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://epicenter.epicodus.com">Go to <em>Epicodus</em></a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" id="dark" onClick="dark()">Toggle Dark Mode</a>
+          </li> <!-- class = nav-item -->
+        </ul> <!-- class = navbar-nav -->
+      </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
+      <div class="card jumbotron">
+        <div class="card-header">
+          <h2 class="card-text"> Programming Language Suggester </h2>
+        </div> <!-- class = card-header -->
+        <div class="card-body">
+          <p class="card-text"> Need a programming language to study? Good news! We don't know what any of these languages mean except for C#, but we're confident our patent pending algorithms are going to match YOU with a programming language you deserve. Disclaimer: The patent was sent to the wrong patent office so it's gonna be pending for a very long time. This will in no way assist you with picking a programming language and you're better off picking at random than using this piece of crap which only uses the power of SOUL READING to learn your desires and such.</p>
+        </div> <!-- class = card-body -->
+      </div> <!-- class = card jumbotron -->
+      <div class="card-group">
+        <div class="card">
+          <div class="card-header" id="formside">
+            <h2 class="card-text"> Survey Space </h2>
+          </div> <!-- class = card-header -->
+          <div class="card-body">
+            <form id="codeform">
+              <div class="form-group">
+                <label for="id">Official Designation number?</label>
+                <input id="id" class="form-control" type="number" value="42921">
+              </div> <!-- class = form-group -->
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" class="form-control" type="date">
+              </div> <!-- class = form-group -->
+              <div class="form-group">
+                <label for="num0">Favorite Number</label>
+                <input id="num0" class="form-control" type="number" value="0">
+              </div> <!-- class = form-group -->
+              <div class="form-group">
+              <label for="num1">Second Favorite Number</label>
+                <input id="num1" class="form-control" type="number" value="0">
+              </div> <!-- class = form-group -->
+              <div class="form-group">
+                <label for="num2">Third Favorite Number</label>
+                <input id="num2" class="form-control" type="number" value="0">
+              </div> <!-- class = form-group -->
+              <div class="form-group">
+                <label for="num3">Fourth Favorite Number</label>
+                <input id="num3" class="form-control" type="number" value="0">
+              </div> <!-- class = form-group -->
+              <button type="submit" class="btn btn-info" name="button">SUBMIT TO THE JUDGEMENT OF THE MACHINE</button>
+            </form>
+            <p class="card-text">I made this during class during the week and figured I'd port it over because it's not part of the review's requirements. I thought our solution was really efficient so I felt like showing it off. Input strings to the form in the form of "a + b" and so on. Supported functions: + - / *. Use parentheses as well, it will follow order of operations.</p>
+            <div class="card" id="claculator">
+              <div class="card-header">
+                <h2> String based Calculator </h2>
+              </div> <!-- class = card-header -->
+              <div class="card-body">
+                <form id="calc">
+                  <label for="string">Input Equation</label>
+                  <input id="string" class="form-control" type="text">
+                <button type="submit" class="btn">Solve</button>
+              </form>
+              <h3 class="card-text card-footer" id="s">
+              </h3> <!-- class = card-text id = screen -->
+            </div> <!-- class = card-body -->
+          </div> <!-- class = card -->
+        </div> <!-- class = card-body -->
+        <div class="card-footer">
+          <p class="card-text"> No cheating!!! </p>
+        </div> <!-- class = card-footer -->
+      </div> <!-- class = card id = formside -->
+      <div class="card">
+        <div class="card-header" id="formside">
+          <h2 class="card-text"> Our response! </h2>
+        </div> <!-- class = card-header -->
+        <div class="card-body">
+          <img src="media/logo_swarm.png" alt="swoosh logo" class="card-img-top" id="logoswarm">
+          <h3 class="card-text para" id="title"> You might want to try <span class="language"></span>!</h3>
+          <div class="para" id="Ruby">
+            <p class="card-text"> You like Ruby because you are a BOLD person. you go with the flow, but you do it in style. A natural leader, and excellent decision maker, others look to you as a beacon. Even staying within the bounds of tight parameters, you find ways to bend the rules and show off in style. </p>
+          </div> <!-- class = para id = Ruby -->
+          <div class="para" id="C#">
+            <p class="card-text"> You like C# because you are a BOLD person. you go with the flow, but you do it in style. A natural leader, and excellent decision maker, others look to you as a beacon. Even staying within the bounds of tight parameters, you find ways to bend the rules and show off in style. </p>
+            </div> <!-- class = para id = C# -->
+            <div class="para" id='Javascript'>
+                <p class="card-text"> You are a fertile rice Paddy. So you will like Javascript. That is all </p>
+            </div> <!-- class = para id = Javascript -->
+            <div class="para" id='Go'>
+              <p class="card-text"> Someone is waiting for you to call them. We won't say who. </p>
+            </div> <!-- class = para id = Go -->
+            <div class="para" id='Python'>
+              <p class="card-text"> There are more than 8 species of spider living on your body right now. </p>
+            </div> <!-- class = para id = Python -->
+          </div> <!-- class = card-body -->
+          <div class="card-footer">
+            <p class="card-text"> This survey was brought to you by Wheat and Wheat By Products. If you're in need for a treat, try wheat, or wheat by-products. Need to fix a leaky roof? We have just what you need, and we also have its by-products. Wheat, and wheat by-products.</p>
+          </div> <!-- class = card-footer -->
+        </div> <!-- class = card id = responseside-->
+      </div> <!-- class = card-group -->
+    </div> <!-- class = container -->
+  </body>
+</html>

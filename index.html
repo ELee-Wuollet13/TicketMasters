@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
     <meta charset="utf-8">
     <title>Portfolio - Lillian Theuma</title>
   </head>
@@ -17,9 +19,16 @@
           <li class="nav-item">
             <a class="nav-link" href="https://epicenter.epicodus.com">Go to <em>Epicodus</em></a>
           </li> <!-- class = nav-item -->
-          <li class="nav-item">
-            <a class="nav-link" href="dark.html">Toggle Dark Mode</a>
-          </li> <!-- class = nav-item -->
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Code Review Files
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="survey.html">Programming Language Picker</a>
+              </div>
+            </div> <!-- class = dropdown -->
+          </li>
         </ul> <!-- class = navbar-nav -->
       </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
       <div id="header" class="jumbotron">

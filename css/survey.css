@@ -1,0 +1,13 @@
+#claculator , .card-header {
+  text-align: center;
+}
+.para {
+  display: none;
+}
+.nav-link {
+  user-select: none;
+}
+form button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
