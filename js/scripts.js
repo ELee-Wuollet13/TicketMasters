@@ -53,6 +53,7 @@ function dark() {
   $('.container').toggleClass("bg-dark");
   $('.navbar').toggleClass("navbar-light bg-light bg-secondary");
   $('.card.jumbotron').toggleClass('');
+  $('#header').toggleClass("bg-secondary");
   $('.card-header').toggleClass('bg-info');
   $('.card-body').toggleClass('bg-secondary');
   $('.card').toggleClass('bg-secondary');
@@ -61,7 +62,45 @@ function dark() {
   $('body').toggleClass('bg-dark text-light');
   $('button').toggleClass('bg-info');
   $('a').toggleClass('text-light');
+  $('.list-group-item').toggleClass('bg-secondary');
 }
-function light() {
-
+var a = 0;
+var b = 0;
+var c = 0;
+function changeClass(num) {
+  if(num==1 && c==1){
+    document.getElementById("buttonA").className = "btn btn-dark disabled";
+    a=1;
+  }
+  else if (num==2 && c==1 && a==1){
+    document.getElementById("buttonB").className = "btn btn-dark disabled";
+    b=1;
+  }
+  else if (num==3){
+    document.getElementById("buttonC").className = "btn btn-dark disabled";
+    c = 1;
+  }
+  else {
+    resetGame();
+  }
+}
+function iWon() {
+  if (a==1 && b==1 && c==1) {
+    alert("You won! Congratulations! You wasted your time pushing buttons! Have a prize for your efforts!");
+    document.getElementById("trophy").className = "d-inline-block";
+    document.getElementById("youwon").className = "thisisaclass";
+    document.getElementById("resetbutton").className = "btn btn-warning";
+  }
+  else {
+    alert("You lose! Try to get all three buttons disabled first.")
+    changeClass(4); // calls the button press with an invalid number, immediately resetting the buttons through the else statement
+  }
+}
+function resetGame(){
+  a = 0;
+  b = 0;
+  c = 0;
+  document.getElementById("buttonA").className = "btn btn-success";
+  document.getElementById("buttonB").className = "btn btn-danger";
+  document.getElementById("buttonC").className = "btn btn-primary";
 }
