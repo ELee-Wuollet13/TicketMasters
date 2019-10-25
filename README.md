@@ -8,6 +8,8 @@ This portfolio is presented as a solution to the project guidelines described in
 * A FTP server
 OR
 * A local computer
+AND
+* Internet connection
 
 ## Setup with GIT
 * Open terminal, and navigate to a directory of your choice, then use the following command to clone files to local machine.
