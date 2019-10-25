@@ -1,5 +1,5 @@
 # Portfolio - Lillian Theuma
-This portfolio is presented as a solution to the project guidelines described in (https://epicenter.epicodus.com/courses/458/code_reviews/1917). It is a static webpage, with a dark and light mode, that has information. It is presented as a portfolio of work done by myself, Lillian Theuma.
+This portfolio is presented as a solution to the project guidelines described in (https://epicenter.epicodus.com/courses/458/code_reviews/1917) and https://epicenter.epicodus.com/courses/458/code_reviews/1927. It is a static webpage, with a dark and light mode, that has information. It is presented as a portfolio of work done by myself, Lillian Theuma.
 
 ## GITHUB Repository
 * This project can be found at https://github.com/lillianTheuma/Portfolio
