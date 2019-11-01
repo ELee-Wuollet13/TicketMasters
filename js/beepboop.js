@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var beeps=['','Beep!','Boop!',"I'm sorry, Dave. I'm afraid I can't do that."];
-  var num=105; // This is a pretend input. Make it an input later!!!!!
+  var num=5; // This is a pretend input. Make it an input later!!!!!
   var range = numRange(num);
   console.log(range);
 
@@ -10,12 +10,11 @@ $(document).ready(function() {
       range[i]=buup;
     }
   }
-
   console.log(range);
 });
 function numRange(num){
   var range=[];
-  for (var i=0; i<num;i++){
+  for (var i=0; i<=num;i++){
     range.push(i);
   } // for
   return range;
@@ -30,9 +29,7 @@ function boopQuery(num){
       biip=2;
     } else if ((biip < 1) && num[i] === '1') {
       biip=1;
-    } else {
-      biip=0;
-    } // if-elif-elif-else
+    }
   } // for loop
   return biip;
 } // function boopQuery
