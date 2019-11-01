@@ -60,6 +60,8 @@ function dark() { // This is a basic dark mode-light mode toggle and can/will be
   $('button').toggleClass('bg-info');
   $('a').toggleClass('text-light');
   $('.list-group-item').toggleClass('bg-secondary');
+  $('.dropdown-menu').toggleClass('bg-dark');
+
 }
 // Code below is regarding to the button game in index.html.
 var a = 0;

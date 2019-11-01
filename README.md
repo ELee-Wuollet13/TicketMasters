@@ -39,6 +39,9 @@ If using on a local machine, open (./Portfolio/index.html)
 OR
 If using on an FTP, direct users to (./Portfolio/index.html)
 
+# Documentation
+For additional documentation regarding functions, see /doc subdirectory.
+
 # Credits
 * Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
 * Many elements herein were possible thanks to the extensive documentation and information for the Bootstrap project.
