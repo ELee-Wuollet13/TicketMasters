@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     var beeps=['',' Beep! ',' Boop! '," I'm sorry, "+name+", I'm afraid I can't do that. "];
 
-    var range = numRange(num);
+    var range = numRange(num, reverse.checked);
     console.log(range);
 
     for (var i=0;i<num;i++){
@@ -15,20 +15,21 @@ $(document).ready(function() {
         range[i]=buup;
       }
     }
-    if (reverse.checked){
-      range = range.reverse();
-    }
+
     var output = range.join(' ');
     $("#maxbooped").text(output);
     event.preventDefault();
   });
 
 });
-function numRange(num){
+function numRange(num, reverse){
   var range=[];
   for (var i=0; i<=num;i++){
     range.push(i);
   } // for
+  if (reverse){
+    range = range.reverse();
+  }
   return range;
 } // function numRange
 function boopQuery(num){
