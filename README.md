@@ -1,18 +1,17 @@
 # Portfolio - Lillian Theuma
 This portfolio is presented as a solution to the project guidelines described in (https://epicenter.epicodus.com/courses/458/code_reviews/1917), https://epicenter.epicodus.com/courses/458/code_reviews/1927, and https://epicenter.epicodus.com/courses/458/code_reviews/1939. It is a static webpage, with a dark and light mode, that has information. It is presented as a portfolio of work done by myself, Lillian Theuma.
-
-- [Heading](#GITHUB Repository)
-  * [Sub-heading](#sub-heading)
-    + [Sub-sub-heading](#sub-sub-heading)
-- [Heading](#heading-1)
-  * [Sub-heading](#sub-heading-1)
-    + [Sub-sub-heading](#sub-sub-heading-1)
-- [Heading](#heading-2)
-  * [Sub-heading](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
-
-
-## GITHUB Repository
+# TABLE OF CONTENTS
+```
+- GITHUB repository
+- Requirements
+- Setup
+  - Setup with GIT
+  - Setup without GIT
+- Usage
+- Credits
+- License Information
+```
+## Repository
 * This project can be found at https://github.com/lillianTheuma/Portfolio
 
 ## Requirements
@@ -44,7 +43,7 @@ If using on an FTP, direct users to (./Portfolio/index.html)
 * Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
 * Many elements herein were possible thanks to the extensive documentation and information for the Bootstrap project.
 
-#License
+# License
 * This repository is offered under the MIT license
 @ Lillian Theuma 2019
 See LICENSE file for additional details regarding license.
