@@ -1,8 +1,11 @@
 $(document).ready(function() {
   $("form#boopform").submit(function(event) {
-    var beeps=['',' Beep! ',' Boop! '," I'm sorry, Dave. I'm afraid I can't do that. "];
 
+    var name = $("#name").val();
     var num = $("#num").val();
+    var reverse = $("#reverse").checked;
+    console.log(reverse);
+    var beeps=['',' Beep! ',' Boop! '," I'm sorry, "+name+", I'm afraid I can't do that. "];
 
     var range = numRange(num);
     console.log(range);
@@ -13,6 +16,9 @@ $(document).ready(function() {
         range[i]=buup;
       }
     }
+    // if (reverse === true) {
+    //   console.log("test");
+    // }
     var output = range.join(' ');
     $("#maxbooped").text(output);
     event.preventDefault();
