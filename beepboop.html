@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/beepboop.cs" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/beepboop.js"></script>
+    <meta charset="utf-8">
+    <title>Portfolio - Lillian Theuma</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="media/happy.gif" alt="Thumbs up gif">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lillianTheuma">See my work on Github</a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://epicenter.epicodus.com">Go to <em>Epicodus</em></a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" id="dark" onClick="dark()">Toggle Dark Mode</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Code Review Files
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="survey.html">Programming Language Picker</a>
+              </div>
+            </div> <!-- class = dropdown -->
+          </li>
+        </ul> <!-- class = navbar-nav -->
+      </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
+      <div id="header" class="jumbotron">
+        <h2>Lillian Theuma</h2>
+        <h4>Portfolio</h4>
+      </div> <!-- id = header - class = jumbotron -->
+      <div id="body">
+
+      </div> <!-- id = body -->
+      <nav id="navbar" class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lillianTheuma/Portfolio">Github Repository</a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://epicenter.epicodus.com/">Go to Epicodus</a>
+          </li> <!-- class = nav-item -->
+          <li class="nav-item">
+            <a class="nav-link" onclick="dark()">Toggle Dark Mode</a>
+          </li> <!-- class = nav-item -->
+        </ul> <!-- class = navbar-nav -->
+      </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
+    </div> <!-- class= container -->
+  </body>
+</html>
