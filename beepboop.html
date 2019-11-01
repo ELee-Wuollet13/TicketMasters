@@ -40,11 +40,45 @@
         </ul> <!-- class = navbar-nav -->
       </nav> <!-- id = navbar, class = navbar navbar-expand-lg navbar-light bg-light -->
       <div id="header" class="jumbotron">
-        <h2>Lillian Theuma</h2>
-        <h4>Beep Boop Generator</h4>
+        <h2 class="card-text">Lillian Theuma</h2>
+        <h4 class="card-text">Beep Boop Generator</h4>
+        <p class="card-text"> This revolutionary state of the art calculator will take any number you want, and turn it into an incomprehensible string of numbers, beeps, boops, and 2001 A Space Odyssey references. Fun for the whole family! </p>
       </div> <!-- id = header - class = jumbotron -->
       <div id="body">
-
+        <div class="row text-center">
+          <div class="col-md-6 card">
+            <h2 class="card-header">
+              Make it BOOPER!
+            </h2> <!-- class = card-header -->
+            <div class="card-body">
+              <p class="card-text">
+                Directions
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  Insert a Number
+                  <em> We reccomend keeping it under 20 </em>
+                </li>
+                <li class="list-group-item">
+                  Push Button
+                </li>
+              </ol>
+              <form id="boopform">
+                <div class="form-group">
+                  <label for="num">Official Designation number?</label>
+                  <input id="num" class="form-control" type="number" value="5">
+                </div> <!-- class = form-group -->
+                <button type="submit" class="btn btn-info" name="button">MAX BOOP</button>
+              </form> <!-- id = codeform -->
+              <p id="maxbooped"></p>
+            </div> <!-- class = card-body -->
+          </div> <!-- class = col-md-6 card -->
+          <div class="col-md-6">
+            <div class="card">
+              <img src="media/logo_swarm.png" class="card-img-top">
+            </div>
+          </div>
+        </div> <!-- class = row text-center -->
       </div> <!-- id = body -->
       <nav id="navbar" class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
