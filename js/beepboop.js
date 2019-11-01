@@ -3,7 +3,7 @@ $(document).ready(function() {
     var beeps=['',' Beep! ',' Boop! '," I'm sorry, Dave. I'm afraid I can't do that. "];
 
     var num = $("#num").val();
-  
+
     var range = numRange(num);
     console.log(range);
 
@@ -28,7 +28,7 @@ function numRange(num){
 } // function numRange
 function boopQuery(num){
   num = num.toString(10);
-  biip=0;
+  var biip=0;
   for (var i=num.length; i>-1;i--){
     if (num[i] === '3') {
       biip=3;
@@ -39,4 +39,4 @@ function boopQuery(num){
     }
   } // for loop
   return biip;
-} // function boopQuery
+}
