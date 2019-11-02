@@ -45,9 +45,9 @@
         <h4 class="card-text">Beep Boop Generator</h4>
         <p class="card-text"> This revolutionary state of the art calculator will take any number you want, and turn it into an incomprehensible string of numbers, beeps, boops, and 2001 A Space Odyssey references. Fun for the whole family! </p>
       </div> <!-- id = header - class = jumbotron -->
-      <div id="body">
-        <div class="row text-center">
-          <div class="col-md-6 card">
+      <div id="body" class="text-center">
+        <div class="card-group">
+          <div class="card">
             <h2 class="card-header">
               Make it BOOPER!
             </h2> <!-- class = card-header -->
@@ -74,20 +74,17 @@
                   <input id="name" class="form-control" type="text" value="Smooth Yoda">
                 </div> <!-- class = form-group -->
                 <div class="form-group">
-                  <label for="reverse">Reverse Output?</label>
-                  <input id="reverse" class="form-control" type="checkbox">
+                  <label for="reverse">Reverse Output?</label>                <input id="reverse" class="form-control" type="checkbox">Make it Reverse!</input>
                 </div> <!-- class = form-group -->
                 <button type="submit" class="btn btn-info" name="button">MAX BOOP</button>
               </form> <!-- id = codeform -->
               <p id="maxbooped"></p>
             </div> <!-- class = card-body -->
-          </div> <!-- class = col-md-6 card -->
-          <div class="col-md-6">
-            <div class="card">
-              <img src="media/logo_swarm.png" class="card-img-top">
-            </div>
+          </div> <!-- class = card -->
+          <div class="card">
+            <img src="media/logo_swarm.png" class="card-img-top">
           </div>
-        </div> <!-- class = row text-center -->
+        </div> <!-- class = card-group -->
       </div> <!-- id = body -->
       <nav id="navbar" class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">

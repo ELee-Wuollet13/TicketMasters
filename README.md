@@ -8,6 +8,7 @@ This portfolio is presented as a solution to the project guidelines described in
   - Setup with GIT
   - Setup without GIT
 - Usage
+- Documentation
 - Credits
 - License Information
 ```
@@ -38,6 +39,8 @@ git clone https://github.com/lillianTheuma/Portfolio
 If using on a local machine, open (./Portfolio/index.html)
 OR
 If using on an FTP, direct users to (./Portfolio/index.html)
+
+Navigate between project files with the drop-down menu on the upper navbar. Each project is labeled according to their week.
 
 # Documentation
 For additional documentation regarding functions, see /doc subdirectory.
